@@ -39,9 +39,13 @@ class VideoCall extends React.Component {
 
   componentDidMount() {
     setTimeout(() => {
+      const options = {
+        subject: "Subject",
+        token: "JWT"
+      }
       const url = self.props.navigation.getParam('url');
       const userInfo = { displayName: 'User', email: 'user@example.com', avatar: 'https:/gravatar.com/avatar/abc123' };
-      JitsiMeet.call(url, userInfo);
+      JitsiMeet.call(url, userInfo, options);
       /* You can also use JitsiMeet.audioCall(url) for audio only call */
       /* You can programmatically end the call with JitsiMeet.endCall() */
     }, 1000);
