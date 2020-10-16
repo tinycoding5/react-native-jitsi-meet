@@ -5,7 +5,7 @@ React native wrapper for Jitsi Meet SDK
 
 Add  following in dependencies package.json file
 
-`react-native-jitsi-meet": "git+https://github.com/tinycoding5/react-native-jitsi-meet`
+`"react-native-jitsi-meet": "git+https://github.com/tinycoding5/react-native-jitsi-meet"`
 
 `npm install`
 
