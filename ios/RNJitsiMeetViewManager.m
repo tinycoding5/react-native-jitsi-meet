@@ -45,6 +45,7 @@ RCT_EXPORT_METHOD(call:(NSString *)urlString userInfo:(NSDictionary *)userInfo c
             builder.room = urlString;
             builder.userInfo = _userInfo;
             builder.subject = callSettings[@"subject"];
+            builder.token = callSettings[@"token"];
         }];
         [jitsiMeetView join:options];
     });

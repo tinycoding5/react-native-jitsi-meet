@@ -58,6 +58,7 @@ public class RNJitsiMeetModule extends ReactContextBaseJavaModule {
                             .setAudioOnly(false)
                             .setUserInfo(_userInfo)
                             .setSubject(callSettings.getString("subject"))
+                            .setToken(callSettings.getString("token"))
                             .build();
                     mJitsiMeetViewReference.getJitsiMeetView().join(options);
                 }
