@@ -3,7 +3,11 @@ React native wrapper for Jitsi Meet SDK
 
 ## Install
 
-`npm install react-native-jitsi-meet --save` 
+Add  following in dependencies package.json file
+
+`react-native-jitsi-meet": "git+https://github.com/tinycoding5/react-native-jitsi-meet`
+
+`npm install`
 
 If you are using React-Native < 0.60, you should use a version < 2.0.0.  
 For versions higher than 2.0.0, you need to add the following piece of code in your ```metro.config.js``` file to avoid conflicts between react-native-jitsi-meet and react-native in metro bundler.
